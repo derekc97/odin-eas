@@ -1,13 +1,29 @@
-.eas-container {
-    border: 5px solid blue;
-    display: grid;
-    grid-template-columns: repeat(20, 1fr);
-    gap: 1px;
-    grid-template-rows: repeat(20, 1fr);
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.eas {
-    border: 2px solid black;
-    height: 20px;
-    width: 20px
+.body-container {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.eas-container {
+    width: 500px;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.eas-grid {
+    /* width: 30%; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    
+}
+
+.gridbox {
+    aspect-ratio: 1;
+    border: 1px solid black;
 }
