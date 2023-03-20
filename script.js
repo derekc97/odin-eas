@@ -1,33 +1,25 @@
-let body = document.querySelector("body");
+let gridSize = 10;
 let easGrid = document.querySelector(".eas-grid");
+let body = document.querySelector("body");
+let brushColor = "black";
 
-
-let buildButton = document.createElement("button");
-buildButton.textContent = "build";
-body.appendChild(buildButton);
-
-gridSize = 16;
-
-buildButton.addEventListener("click", ()=> {
-    let divAmount = gridSize * gridSize;
-    for (let i = 0; i < divAmount; i++) {
-        let gridBox = document.createElement("div");
-        easGrid.appendChild(gridBox);
-        gridBox.classList.add("gridbox");
-        paintGrid();
-
+function initialGrid (size) {
+    let gridAmount = size * size;
+    for (let i = 0; i < gridAmount; i++) {
+        let gridSquare = document.createElement("div");
+        easGrid.appendChild(gridSquare);
+        console.log(i);
+        gridSquare.classList.add("grid-square");
     }
-})
+    easGrid.style.gridTemplateColumns = "repeat(" + size + ", 1fr)";
+    easGrid.style.gridTemplateRows = "repeat(" + size + ", 1fr)";
+}
 
-brushColor = "black";
-
-
-function paintGrid() {
-    let gridboxArray = document.querySelectorAll(".gridbox");
-    for (let i = 0; i < gridboxArray.length; i++) {
-        gridboxArray[i].addEventListener("mouseover", ()=> {
-            console.log("hello");
-            gridboxArray[i].style.backgroundColor = "black";
-        })
+function paintColor() {
+    let gridArray = document.querySelectorAll(".grid-square");
+    for (let i = 0; i < gridArray.length; i++) {
+        gridArray[i].addEventListener
     }
 }
+
+initialGrid(gridSize);
