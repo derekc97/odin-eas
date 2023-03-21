@@ -10,6 +10,8 @@ const eraseButton = document.querySelector("#erase");
 const resetButton = document.querySelector("#reset");
 const changeButton = document.querySelector("#change-size");
 
+console.log(Math.floor(Math.random() * 255));
+
 changeButton.addEventListener("click", ()=> {
     let gridArray = document.querySelectorAll(".grid-square")
     // let holder = gridSize;
@@ -59,7 +61,6 @@ function initialGrid (size) {
     for (let i = 0; i < gridAmount; i++) {
         let gridSquare = document.createElement("div");
         easGrid.appendChild(gridSquare);
-        console.log(i);
         gridSquare.classList.add("grid-square");
     }
     easGrid.style.gridTemplateColumns = "repeat(" + size + ", 1fr)";
