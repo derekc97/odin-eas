@@ -3,6 +3,20 @@ body {
     padding: 0;
     background-color: lightblue;
     box-sizing: border-box;
+    font-family: goth
+}
+
+.hero-text {
+    color: white;
+    font-size: 40px;
+    background-color: #7bb0c1;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .body-container {
@@ -31,6 +45,80 @@ body {
 }
 
 .grid-square {
-    border: 0.1px solid black;
+    /* border: 0.1px solid black; */
     aspect-ratio: 1;
+}
+
+.buttons-container {
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.eas-button {
+    background-color: #7bb0c1;
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#change-size:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+#black {
+    border: 2px solid black;
+    background-color: black;
+}
+
+#black:hover {
+    border: 2px solid white;
+}
+
+#blue {
+    border: 2px solid blue;
+    background-color: blue;
+}
+
+#blue:hover {
+    border: 2px solid white;
+    background-color: 
+    #5784bb;
+}
+
+#red {
+    border: 2px solid red;
+    background-color: red;
+}
+
+#red:hover {
+    border: 2px solid white;
+    background-color: #FF6961;
+}
+
+#green {
+    border: 2px solid green;
+    background-color: green;
+}
+
+#green:hover {
+    border: 2px solid white;
+    background-color: #77DD77;
+}
+
+#erase {
+    background-color: white;
+    color: black;
+}
+
+#erase:hover {
+    border: 2px solid black;
+}
+
+#reset:hover {
+    background-color: brown;
 }
